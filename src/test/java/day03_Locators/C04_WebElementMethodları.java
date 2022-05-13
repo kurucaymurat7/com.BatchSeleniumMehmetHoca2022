@@ -40,6 +40,8 @@ public class C04_WebElementMethodları {
 
         System.out.println("konum :" + aramakutusu.getLocation());
         System.out.println("yükseklik:" + aramakutusu.getSize().height);
-
+        System.out.println(aramakutusu.getDomAttribute("name"));
+        System.out.println("css value:" + aramakutusu.getCssValue("name"));
+        System.out.println(aramakutusu.isDisplayed());
     }
 }

@@ -10,7 +10,6 @@ import java.util.List;
 
 public class C02_FindElements {
     public static void main(String[] args) {
-
         System.setProperty("webdriver.chrome.driver", "resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.amazon.com");
@@ -18,6 +17,5 @@ public class C02_FindElements {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         List<WebElement> linkListesi = driver.findElements(By.tagName("a"));
         System.out.print(linkListesi.size());
-
     }
 }

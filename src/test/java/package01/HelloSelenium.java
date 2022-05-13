@@ -17,7 +17,7 @@ public class HelloSelenium {
 
         driver.getTitle(); // => "Google"
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1));
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(15));
 
         WebElement searchBox = driver.findElement(By.name("q"));
         WebElement searchButton = driver.findElement(By.name("btnK"));
